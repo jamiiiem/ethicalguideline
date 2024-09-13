@@ -44,6 +44,8 @@ main {
     text-align: left;
     cursor: pointer;
     font-size: 16px;
+    position: relative;
+    border-radius: 5px;
 }
 
 .section-header:hover {
@@ -52,6 +54,8 @@ main {
 
 .subsections {
     display: none;
+    padding: 10px;
+    margin-top: 5px;
 }
 
 .subsections ul {
