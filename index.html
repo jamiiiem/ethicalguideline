@@ -1,59 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy and Data Protection</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Privacy and Data Protection</h1>
-        <nav>
-            <ul>
-                <li><a href="#A1" onclick="toggleSection('A1')">Data Anonymisation</a></li>
-                <li><a href="#A2" onclick="toggleSection('A2')">Data Minimisation</a></li>
-                <li><a href="#A3" onclick="toggleSection('A3')">Informed Consent</a></li>
-                <li><a href="#A4" onclick="toggleSection('A4')">Secure Data Storage and Transmission</a></li>
-                <li><a href="#A5" onclick="toggleSection('A5')">User Control</a></li>
-                <li><a href="#A6" onclick="toggleSection('A6')">Compliance with Laws</a></li>
-                <li><a href="#A7" onclick="toggleSection('A7')">Privacy Audits</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Privacy and Data Protection</h1>
+        </header>
 
-    <main>
-        <section id="A1" class="content-section">
-            <h2>Data Anonymisation</h2>
-            <div class="content">
-                <h3>Definition:</h3>
-                <p>Data should be collected with efforts to encrypt or erase user’s private, sensitive, and identifiable information.</p>
-                <h3>Techniques:</h3>
-                <ul>
-                    <li><strong>Data Masking:</strong> Substitute identifiable data with randomised data using data shuffling or data manipulation ideas.</li>
-                    <li><strong>Tokenisation:</strong> Convert sensitive data into equivalent tokens that can be used in the system without exposing the original data.</li>
-                    <li><strong>Noise Addition:</strong> Introduce minor randomisation to the data to ensure that individual identities cannot be traced back.</li>
-                    <li><strong>Data Generalisation:</strong> The precision of sensitive information can be reduced, generalising it by categorising data into groups.</li>
-                </ul>
-                <h3>Considerations:</h3>
-                <p>Developers should aim to strike a balance between privacy and utility of data. Data protection measures are necessary and important, but overusing protection mechanisms may also lead to a lack of relevance and precision.</p>
-                <h3>Examples:</h3>
-                <p>The actual names of users can be converted into randomised strings to avoid storing sensitive training data. Plus, instead of using their precise age, data generalisation can be performed to categorise them into age groups of, for example, 15 to 18 years old, or 18-21 years old.</p>
-                <h3>Tags:</h3>
-                <p>#training, #interaction</p>
+        <main>
+            <div class="toc">
+                <h2>Table of Contents</h2>
+                <div class="section">
+                    <button class="section-header">Section A: Privacy and Data Protection</button>
+                    <div class="subsections">
+                        <ul>
+                            <li><a href="#A1">Data Anonymisation</a></li>
+                            <li><a href="#A2">Data Minimisation</a></li>
+                            <li><a href="#A3">Informed Consent</a></li>
+                            <li><a href="#A4">Secure Data Storage and Transmission</a></li>
+                            <li><a href="#A5">User Control</a></li>
+                            <li><a href="#A6">Compliance with Laws</a></li>
+                            <li><a href="#A7">Privacy Audits</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </section>
-        <!-- Repeat similar sections for A2, A3, A4, A5, A6, A7 -->
-    </main>
+        </main>
 
-    <footer>
-        <p>© 2024 Privacy and Data Protection</p>
-    </footer>
-
-    <script src="script.js"></script>
+        <footer>
+            <p>© 2024 Privacy and Data Protection</p>
+        </footer>
+    </div>
 </body>
 </html>
-

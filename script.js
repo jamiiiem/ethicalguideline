@@ -1,10 +1,14 @@
-function toggleSection(sectionId) {
-    const sections = document.querySelectorAll('.content-section');
-    sections.forEach(section => {
-        if (section.id === sectionId) {
-            section.classList.toggle('active');
-        } else {
-            section.classList.remove('active');
-        }
+document.addEventListener('DOMContentLoaded', () => {
+    const sectionHeaders = document.querySelectorAll('.section-header');
+
+    sectionHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+            const subsections = header.nextElementSibling;
+            if (subsections.style.display === 'block') {
+                subsections.style.display = 'none';
+            } else {
+                subsections.style.display = 'block';
+            }
+        });
     });
-}
+});
