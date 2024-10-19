@@ -5,28 +5,436 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Read Me</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* General body styling */
+        body {
+            font-family: arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.8em; /* Reduced font size */
+            letter-spacing: 1px;
+        }
+
+        main {
+            max-width: 900px; /* Reduced overall container size */
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            font-size: 1.05em; /* Slightly reduced font size */
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        ul li a {
+            color: #333; /* Changed hyperlink color to match text */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Compact Table styling */
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            margin: 10px auto;
+            background-color: #fff;
+        }
+
+        th, td {
+            padding: 8px 10px; /* Reduced padding */
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            font-size: 0.9em; /* Reduced font size */
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+            width: 40%;
+        }
+
+        td {
+            width: 50%;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        td[colspan="2"] {
+            text-align: left;
+        }
+
+        .back-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .back-button button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .back-button button:hover {
+            background-color: #444;
+        }
+
+        h2 {
+            font-size: 1.3em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        section {
+            padding: 16px 0;
+        }
+
+        footer {
+            text-align: center;      
+            font-size: 16px;      
+            color: #666;       
+            padding: 20px 0;      
+            margin-top: 30px; 
+        }
+
+        @media (max-width: 768px) {
+            main {
+                padding: 10px;
+            }
+
+            th, td {
+                padding: 6px 8px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
 </head>
 <body>
+
     <header>
         <h1>Read Me</h1>
     </header>
+
     <main>
         <section>
-            <p>To read more about policies and practices for responsible and ethical AI development, you may visit the following three resources:</p>
-            <ul>
-                <li><a href="https://blogs.microsoft.com/wp-content/uploads/prod/sites/5/2022/06/Microsoft-Responsible-AI-Standard-v2-General-Requirements-3.pdf" target="_blank">Microsoft Responsible - AI Standard</a></li>
-                <li><a href="https://www.pdpc.gov.sg/ai" target="_blank">PDPC Singapore - AI Verify</a></li>
-                <li><a href="https://www.scs.org.sg/bok/ai-ethics-v2-0" target="_blank">Singapore Computer Society - AI Ethics and Governance Body of Knowledge</a></li>
-            </ul>
+            <p>The Guideline is separated into seven major sections. You may choose to filter and find specific information using the “Select Section” or “Select Tag” features on the home page, or both.</p>
+            <p>The tables below outline parts in reference guidelines that correspond to each section in this Guideline. You may refer to the tables to read more about the policies and practices for responsible and ethical AI development. </p>
+            <p>The shorthand form SCS refers to the <a href="https://www.scs.org.sg/bok/ai-ethics-v1-1" target="_blank">Singapore Computer Society Artificial Intelligence Ethics & Governance Body of Knowledge</a>, Microsoft refers to the <a href="https://blogs.microsoft.com/wp-content/uploads/prod/sites/5/2022/06/Microsoft-Responsible-AI-Standard-v2-General-Requirements-3.pdf" target="_blank">Microsoft Responsible AI Standard</a>, AIGov refers to the <a href="https://www.pdpc.gov.sg/-/media/files/pdpc/pdf-files/resource-for-organisation/ai/sgmodelaigovframework2.pdf" target="_blank">Model Artificial Intelligence Governance Framework</a> by Personal Data Protection Commission Singapore and AI Verify Foundation, GenAI refers to the <a href="https://aiverifyfoundation.sg/wp-content/uploads/2024/05/Model-AI-Governance-Framework-for-Generative-AI-May-2024-1-1.pdf" target="_blank">Model AI Governance Framework for Generative AI</a> by AI Verify Foundation and Infocomm Media Development Authority.</p>
         </section>
+
+        <section>
+            <h2>Section A: Privacy and Data Protection</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Section</th>
+                        <th>Corresponding Guidelines</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>A1 Data Anonymisation</td>
+                        <td>SCS 1.0 Chapter 5.2</td>
+                    </tr>
+                    <tr>
+                        <td>A2 Data Minimisation</td>
+                        <td>SCS 1.1 Chapter 4.2</td>
+                    </tr>
+                    <tr>
+                        <td>A3 Informed Consent</td>
+                        <td>SCS 2.0 Chapter 2.3<br>GenAI Chapter 2 Page 8</td>
+                    </tr>
+                    <tr>
+                        <td>A4 Secure Data Storage and Transmission</td>
+                        <td>SCS Chapter 5.1</td>
+                    </tr>
+                    <tr>
+                        <td>A5 User Control</td>
+                        <td>AIGov Facebook Case Study</td>
+                    </tr>
+                    <tr>
+                        <td>A6 Compliance with Laws</td>
+                        <td>SCS 1.0 Chapter 4.3</td>
+                    </tr>
+                    <tr>
+                        <td>A7 Privacy Audits</td>
+                        <td>AIGov 3.41-3.43<br>GenAI Chapter 5<br>SCS 1.0 Chapter 5.2</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><b>Other Applicable Guidelines:</b><br>Microsoft Privacy Standards<br>General Data Protection Regulation</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Section B: Technical Robustness and Safety</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Section</th>
+                        <th>Corresponding Guidelines</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B1 Security</td>
+                        <td>GenAI Chapter 6<br>SCS 1.0 Chapter 6.2<br>SCS 1.0 Chapter 5.2</td>
+                    </tr>
+                    <tr>
+                        <td>B2 Safety</td>
+                        <td>Microsoft Goal RS1<br>GenAI Chapter 3<br>SCS 1.1 Chapter 4.2<br>SCS 2.0 Chapter 9.1</td>
+                    </tr>
+                    <tr>
+                        <td>B3 Adversarial Robustness</td>
+                        <td>AIGov 3.32<br>SCS 1.0 Chapter 3.3<br>SCS 2.0 Chapter 9.1</td>
+                    </tr>
+                    <tr>
+                        <td>B4 Fail-Safe Implementation</td>
+                        <td>Microsoft Goal RS2<br>AIGov 3.35<br>SCS 2.0 Chapter 9.1</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><b>Other Applicable Guidelines:</b><br>MITRE’s Adversarial Threat Landscape for AI Systems</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Section C: Responsibility</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Section</th>
+                        <th>Corresponding Guidelines</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>C1 Ethical Principles</td>
+                        <td>AIGov 3.7 3.62 Annex A<br>SCS 1.0 Chapter 3.2</td>
+                    </tr>
+                    <tr>
+                        <td>C2 Content Moderation</td>
+                        <td>GenAI Chapter 6<br>SCS 1.1 Chapter 4.2<br>SCS 2.0 Chapter 9.1</td>
+                    </tr>
+                    <tr>
+                        <td>C3 User Support and Feedback</td>
+                        <td>Microsoft Goal RS3<br>AIGov 3.54<br>SCS 1.0 Chapter 6.3</td>
+                    </tr>
+                    <tr>
+                        <td>C4 Continuous Improvement</td>
+                        <td>Microsoft Goal RS3<br>GenAI Chapter 4</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><b>Other Applicable Guidelines:</b><br>A Framework for Ethical AI at the United Nations<br>EU Guidelines on Ethics in AI</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Section D: Accountability</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Section</th>
+                        <th>Corresponding Guidelines</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>D1 Clear Role Assignments</td>
+                        <td>SCS 1.0 Chapter 5.3<br>AIGov 3.26-3.29</td>
+                    </tr>
+                    <tr>
+                        <td>D2 Self-Monitoring</td>
+                        <td>AIGov 3.36</td>
+                    </tr>
+                    <tr>
+                        <td>D3 Corrective Actions</td>
+                        <td>SCS 1.0 Chapter 5.3</td>
+                    </tr>
+                    <tr>
+                        <td>D4 Incident Response</td>
+                        <td>GenAI Chapter 3<br>Microsoft Goal T3</td>
+                    </tr>
+                    <tr>
+                        <td>D5 Regulatory Compliance</td>
+                        <td>GenAI Chapter 3</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><b>Other Applicable Guidelines:</b><br>N/A</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>   
+
+        <section>
+            <h2>Section E: Transparency</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Section</th>
+                            <th>Corresponding Guidelines</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>E1 Explainability</td>
+                            <td>SCS 1.0 Chapter 5.3<br>AIGov 3.26-3.29</td>
+                        </tr>
+                        <tr>
+                            <td>E2 Data Usage Transparency</td>
+                            <td>AIGov 3.36</td>
+                        </tr>
+                        <tr>
+                            <td>E3 Algorithmic Transparency</td>
+                            <td>SCS 1.0 Chapter 5.3</td>
+                        </tr>
+                        <tr>
+                            <td>E4 Capability Disclosure</td>
+                            <td>GenAI Chapter 3<br>Microsoft Goal T3</td>
+                        </tr>
+                        <tr>
+                            <td>E5 Public Documentation</td>
+                            <td>GenAI Chapter 3</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><b>Other Applicable Guidelines:</b><br>DARPA Explainable AI (XAI)</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </section>
+
+        <section>
+            <h2>Section F: Reliability</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Section</th>
+                        <th>Corresponding Guidelines</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>F1 Robust System Architecture</td>
+                        <td>GenAI Chapter 6<br>AIGov 3.31-3.33<br>SCS 1.1 Chapter 5.2</td>
+                    </tr>
+                    <tr>
+                        <td>F2 High Availability</td>
+                        <td>SCS 1.1 Chapter 6.2</td>
+                    </tr>
+                    <tr>
+                        <td>F3 Error Handling</td>
+                        <td>Microsoft Goal RS2</td>
+                    </tr>
+                    <tr>
+                        <td>F4 Performance Monitoring</td>
+                        <td>GenAI Chapter 4<br>Microsoft Goal RS3</td>
+                    </tr>
+                    <tr>
+                        <td>F5 Accuracy and Precision</td>
+                        <td>GenAI Chapter 3<br>Microsoft Goal RS3<br>AIGov 3.23</td>
+                    </tr>
+                    <tr>
+                        <td>F6 Adaptive Learning</td>
+                        <td>GenAI Chapter 9<br>SCS 1.0 Chapter 4.3</td>
+                    </tr>
+                    <tr>
+                        <td>F7 Maintenance and Updates</td>
+                        <td>Microsoft Goal RS2 RS3</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><b>Other Applicable Guidelines:</b><br>N/A</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Section G: Inclusiveness and Fairness</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 30%;">Section</th>
+                        <th style="width: 70%;">Corresponding Guidelines</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>G1 Bias Mitigation</td>
+                        <td>GenAI Chapter 2<br>Microsoft Goal F1<br>SCS 1.0 Chapter 5.2</td>
+                    </tr>
+                    <tr>
+                        <td>G2 Fair Decision-Making</td>
+                        <td>Microsoft Goal F3</td>
+                    </tr>
+                    <tr>
+                        <td>G3 Accessibility and Customisation</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>G4 Diversity</td>
+                        <td>GenAI Chapter 2 Page 9<br>Microsoft Goal F2<br>SCS 1.1 Chapter 5.2</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><b>Other Applicable Guidelines:</b><br>Microsoft Accessibility Standards</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div class="back-button">
+            <a href="index.html" style="text-decoration: none;">
+                <button>Back to Home</button>
+            </a>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Mo Jiayun. All rights reserved.</p>
+        </footer>
+
     </main>
-    <footer>
-        <p>&copy; 2024 Mo Jiayun. All rights reserved.</p>
-    </footer>
-    <div class="back-button">
-        <a href="index.html" style="text-decoration: none;">
-            <button>Back to Home</button>
-        </a>
-    </div>
 </body>
 </html>

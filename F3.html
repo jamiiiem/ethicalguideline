@@ -3,16 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F3 High Availability</title>
+    <title>Section F: Reliability</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
             padding: 0;
         }
+        .container {
+            width: 70%;
+            margin: 0 auto; /* Center the container */
+        }
+        .invisible-container {
+            padding: 0 75px; /* Add left and right padding only */
+        }
         h1 {
             text-align: center;
             font-size: 2em;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 30px;
         }
         h3 {
             font-size: 1.2em;
@@ -45,28 +56,32 @@
 <body>
 
     <h1>Section F: Reliability</h1>
-    <p>
-        Reliability in an AI chatbot refers to its consistent performance, accuracy, and dependability in providing information and assistance to users. A reliable chatbot operates effectively under various conditions, maintains high uptime, and delivers accurate and timely responses.
-    </p>
+    <div class="invisible-container">
+        <p>
+            Reliability in an AI chatbot refers to its consistency, accuracy, and dependability. This section outlines the specific goals that need to be achieved to perform reliability and operate effectively under various conditions. These goals include robust system architecture, high availability, error handling, performance monitoring, accuracy and precision, adaptive learning, and maintenance and updates.
+        </p>
 
-    <h1>F3 High Availability</h1>
-    <h3>Definition:</h3>
-    <p>Developers should ensure the chatbot is available to users whenever needed, minimizing downtime.</p>
-    <h3>Techniques:</h3>
-    <ul>
-        <li>Failover Mechanisms: Implement failover systems that automatically switch to a backup server or system if the primary one fails.</li>
-        <li>Uptime Guarantees: Establish service level agreements (SLAs) that guarantee a certain level of uptime, such as 99.9%.</li>
-        <li>Geographical Redundancy: Deploy the chatbot across multiple data centers in different geographical locations to ensure continued availability in case of regional issues.</li>
-        <li>Redundancy and Failover: Implement redundant systems and failover mechanisms to maintain operations in case of a failure.</li>
-        <li>Regular Maintenance: Schedule and perform regular system maintenance to prevent unexpected downtime.</li>
-    </ul>
-    <div class="tags">Tags: #maintenance, #development</div>
-
-    <div class="back-button">
-        <a href="index.html" style="text-decoration: none;">
-            <button>Back to Home</button>
-        </a>
+        <h2>F3 Error Handling</h2>
+        <h3>Definition:</h3>
+        <p>The chatbot should be able to gracefully handle errors and quickly recover from failures.</p>
+        <h3>Techniques:</h3>
+        <ul>
+            <li>Graceful Degradation: ensure the chatbot can continue operating in a reduced capacity even when parts of the system fail.</li>
+            <li>Error Recovery: implement protocols that allow the chatbot to recover from errors and resume normal operation without user interruption.</li>
+            <li>Error Messages: provide clear and user-friendly error messages to guide users on how to proceed.</li>
+            <li>Error Logging: implement automated systems to log and address errors in real-time.</li>
+        </ul>
+        <h3>Examples:</h3>
+        <ul>
+            <li>In a user-friendly error message, instead of only stating the occurrence of an error, additional information such as what type of error has occurred, clear instructions about how to proceed from here, and alternative resources may also be listed.</li>
+        </ul>
+        <div class="tags">Tags: #development, #maintenance</div>
+        
+        <div class="back-button">
+            <a href="index.html" style="text-decoration: none;">
+                <button>Back to Home</button>
+            </a>
+        </div>
     </div>
-
 </body>
 </html>

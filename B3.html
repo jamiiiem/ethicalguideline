@@ -10,6 +10,13 @@
             margin: 20px;
             padding: 0;
         }
+        .container {
+            width: 70%;
+            margin: 0 auto;
+        }
+        .invisible-container {
+            padding: 0 75px;
+        }
         h1 {
             text-align: center;
             font-size: 2em;
@@ -49,27 +56,31 @@
 <body>
 
     <h1>Section B: Technical Robustness and Safety</h1>
-    <p>
-        AI chatbots should operate reliably, securely, and ethically, even under unexpected or challenging conditions. This section focuses on building resilient systems that can withstand technical failures, adversarial attacks, and other potential risks while maintaining consistent performance. It emphasises security, safety, adversarial robustness, and fail-safe implementations as the four main goals that need to be achieved in order to ensure that the technical robustness and safety is upheld to a reasonable standard.
-    </p>
+    <div class="invisible-container">
+        <p>
+            AI chatbots should operate reliably, securely, and ethically, even under unexpected or challenging conditions. This section focuses on building resilient systems that can withstand technical failures, adversarial attacks, and other potential risks while maintaining consistent performance. It emphasises security, safety, adversarial robustness, and fail-safe implementations as the four main goals that need to be achieved in order to ensure that the technical robustness and safety is upheld to a reasonable standard.
+        </p>
 
-    <h1>B3 Adversarial Robustness</h1>
-    <h3>Definition:</h3>
-    <p>The chatbot should be able to withstand and recover from adversarial attack even under challenging or unexpected circumstances.</p>
-    <h3>Techniques:</h3>
-    <ul>
-        <li>Adversarial Training: the chatbot should be regularly trained with adversarial examples to improve its resilience against such attacks.</li>
-        <li>Regular Audits: regular audits and penetration testing should be performed to identify, mitigate, and eliminate vulnerabilities of the chatbots.</li>
-        <li>Anomaly Detection: a real-time anomaly detection system should be implemented to identify and respond to unusual patterns that may be associated with an attack.</li>
-    </ul>
-    <h3>Examples:</h3>
-    <p>Adversarial attacks may take many forms, including data poisoning and model evasion, so it is important to train the chatbot to defend against a wide range of possible attacks.</p>
-    <div class="tags">Tags: #development, #maintenance</div>
+        <h1>B3 Adversarial Robustness</h1>
+        <h3>Definition:</h3>
+        <p>The chatbot should be able to withstand and recover from adversarial attack even under challenging or unexpected circumstances.</p>
+        <h3>Techniques:</h3>
+        <ul>
+            <li>Adversarial Training: the chatbot should be regularly trained with adversarial examples to improve its resilience against such attacks.</li>
+            <li>Regular Audits: regular audits and penetration testing should be performed to identify, mitigate, and eliminate vulnerabilities of the chatbots.</li>
+            <li>Anomaly Detection: a real-time anomaly detection system should be implemented to identify and respond to unusual patterns that may be associated with an attack.</li>
+        </ul>
+        <h3>Examples:</h3>
+        <ul>
+            <li>Adversarial attacks may take many forms, including data poisoning and model evasion, so it is important to train the chatbot to defend against a wide range of possible attacks.</li>
+        </ul>
+        <div class="tags">Tags: #development, #maintenance</div>
 
-    <div class="back-button">
-        <a href="index.html" style="text-decoration: none;">
-            <button>Back to Home</button>
-        </a>
+        <div class="back-button">
+            <a href="index.html" style="text-decoration: none;">
+                <button>Back to Home</button>
+            </a>
+        </div>
     </div>
 
 </body>

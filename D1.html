@@ -3,16 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D1 Self-Monitoring and Error Detection</title>
+    <title>Section D: Accountability</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
             padding: 0;
         }
+        .container {
+            width: 70%;
+            margin: 0 auto;
+        }
+        .invisible-container {
+            padding: 0 75px;
+        }
         h1 {
             text-align: center;
             font-size: 2em;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 30px;
         }
         h3 {
             font-size: 1.2em;
@@ -45,25 +56,34 @@
 <body>
 
     <h1>Section D: Accountability</h1>
-    <p>
-        Accountability in AI chatbot development refers to the obligation of developers, organizations, and the chatbot itself to take responsibility for its actions, outcomes, and impacts. This includes ensuring that the chatbot adheres to ethical standards, operates transparently, and addresses any harm or issues that arise from its use.
-    </p>
+    <div class="invisible-container">
+        <p>
+            Accountability in AI chatbot development refers to the obligation of the developers and the chatbot to accept their responsibilities and face consequences whenever necessary. This section lists the specific goals that need to be achieved to ensure the accountability principles are upheld to a reasonable standard. These goals include clear role assignments, self-monitoring, corrective actions, incident response, and regulatory compliance.
+        </p>
 
-    <h1>D1 Self-Monitoring and Error Detection</h1>
-    <h3>Definition:</h3>
-    <p>The chatbot should have a capability to monitor its own operations and detect errors or problematic behaviour.</p>
-    <h3>Techniques:</h3>
-    <ul>
-        <li>Error Logging: implement systems that allow the chatbot to log and categorize errors in real-time.</li>
-        <li>Anomaly Detection: utilize algorithms to detect unusual patterns in the chatbot’s responses that may indicate errors.</li>
-        <li>Self-Assessment: enable the chatbot to periodically assess its performance against set benchmarks.</li>
-    </ul>
-    <div class="tags">Tags: #maintenance</div>
+        <h2>D1 Clear Role Assignments</h2>
+            <h3>Definition:</h3>
+            <p>Developers should establish clear roles for stakeholders that are involved in the development, deployment, and maintenance of the chatbot.</p>
+            <h3>Techniques:</h3>
+            <ul>
+                <li>Responsibility Matrix: create a responsibility assignment matrix to assign roles to different stakeholders involved.</li>
+                <li>Role Documentation: document each role’s duties and expectations to ensure responsibility are correctly borne.</li>
+            </ul>
+            <h3>Examples:</h3>
+            <ul>
+                <li>There are a variety of responsibility assignment matrices available. One popular example is the RACI model. Another is the DACI model, and the RAPID model fits decision-oriented scenarios more.</li>
+            </ul>
+            <h3>Resources:</h3>
+            <ul>
+                <li><a href="https://pmicie.org/files/22/PM-Toolkit/85/racirweb31.pdf" target="_blank">Role and Responsibility Charting</a></li>
+            </ul>
+        <div class="tags">Tags: #development</div>
 
-    <div class="back-button">
-        <a href="index.html" style="text-decoration: none;">
-            <button>Back to Home</button>
-        </a>
+        <div class="back-button">
+            <a href="index.html" style="text-decoration: none;">
+                <button>Back to Home</button>
+            </a>
+        </div>
     </div>
 
 </body>

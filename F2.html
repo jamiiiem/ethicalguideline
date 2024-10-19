@@ -3,16 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F2 Continuous Performance Monitoring</title>
+    <title>Section F: Reliability</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
             padding: 0;
         }
+        .container {
+            width: 70%;
+            margin: 0 auto; /* Center the container */
+        }
+        .invisible-container {
+            padding: 0 75px; /* Add left and right padding only */
+        }
         h1 {
             text-align: center;
             font-size: 2em;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 30px;
         }
         h3 {
             font-size: 1.2em;
@@ -45,25 +56,30 @@
 <body>
 
     <h1>Section F: Reliability</h1>
-    <p>
-        Reliability in an AI chatbot refers to its consistent performance, accuracy, and dependability in providing information and assistance to users. A reliable chatbot operates effectively under various conditions, maintains high uptime, and delivers accurate and timely responses.
-    </p>
+    <div class="invisible-container">
+        <p>
+            Reliability in an AI chatbot refers to its consistency, accuracy, and dependability. This section outlines the specific goals that need to be achieved to perform reliability and operate effectively under various conditions. These goals include robust system architecture, high availability, error handling, performance monitoring, accuracy and precision, adaptive learning, and maintenance and updates.
+        </p>
 
-    <h1>F2 Continuous Performance Monitoring</h1>
-    <h3>Definition:</h3>
-    <p>Developers should be regularly monitoring the chatbot’s performance to detect and address issues promptly.</p>
-    <h3>Techniques:</h3>
-    <ul>
-        <li>Real-Time Monitoring Tools: Utilize tools that provide real-time monitoring of the chatbot’s response times, error rates, and user interactions.</li>
-        <li>Health Checks: Implement automated health checks to ensure all components of the chatbot are functioning correctly.</li>
-        <li>Alert Systems: Set up alerts to notify developers or support teams immediately if the chatbot’s performance falls below acceptable thresholds.</li>
-    </ul>
-    <div class="tags">Tags: #development</div>
-
-    <div class="back-button">
-        <a href="index.html" style="text-decoration: none;">
-            <button>Back to Home</button>
-        </a>
+        <h2>F2 High Availability</h2>
+        <h3>Definition:</h3>
+        <p>The chatbot should be available to users whenever they need it, and downtime should be minimised.</p>
+        <h3>Techniques:</h3>
+        <ul>
+            <li>Failover Mechanisms: implement failover systems that automatically switch to a backup system if the primary one fails.</li>
+            <li>Uptime Guarantees: establish service level agreements (SLAs) that guarantee a certain level of uptime.</li>
+        </ul>
+        <h3>Resources:</h3>
+        <ul>
+            <li><a href="https://www.ibm.com/docs/en/db2/11.5?topic=availability-high-strategies" target="_blank">IBM High Availability Strategies</a></li>
+        </ul>
+        <div class="tags">Tags: #development</div>
+        
+        <div class="back-button">
+            <a href="index.html" style="text-decoration: none;">
+                <button>Back to Home</button>
+            </a>
+        </div>
     </div>
 
 </body>

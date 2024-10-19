@@ -3,16 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F5 Error Handling and Recovery</title>
+    <title>Section F: Reliability</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
             padding: 0;
         }
+        .container {
+            width: 70%;
+            margin: 0 auto; /* Center the container */
+        }
+        .invisible-container {
+            padding: 0 75px; /* Add left and right padding only */
+        }
         h1 {
             text-align: center;
             font-size: 2em;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 30px;
         }
         h3 {
             font-size: 1.2em;
@@ -45,27 +56,32 @@
 <body>
 
     <h1>Section F: Reliability</h1>
-    <p>
-        Reliability in an AI chatbot refers to its consistent performance, accuracy, and dependability in providing information and assistance to users. A reliable chatbot operates effectively under various conditions, maintains high uptime, and delivers accurate and timely responses.
-    </p>
+    <div class="invisible-container">
+        <p>
+            Reliability in an AI chatbot refers to its consistency, accuracy, and dependability. This section outlines the specific goals that need to be achieved to perform reliability and operate effectively under various conditions. These goals include robust system architecture, high availability, error handling, performance monitoring, accuracy and precision, adaptive learning, and maintenance and updates.
+        </p>
 
-    <h1>F5 Error Handling and Recovery</h1>
-    <h3>Definition:</h3>
-    <p>The chatbot should have the capability to handle errors gracefully and recover quickly from failures.</p>
-    <h3>Techniques:</h3>
-    <ul>
-        <li>Graceful Degradation: Design the chatbot to continue operating in a reduced capacity when parts of the system fail, rather than crashing entirely.</li>
-        <li>Error Recovery Protocols: Implement protocols that allow the chatbot to recover from errors and resume normal operation without user disruption.</li>
-        <li>User-Friendly Error Messages: Provide clear and helpful error messages that guide users on how to proceed when something goes wrong.</li>
-        <li>Automated Error Logging: Implement automated systems to log and address errors in real-time.</li>
-        <li>Error Notification: Notify users promptly if an error occurs, with clear instructions or alternative resources.</li>
-    </ul>
-    <div class="tags">Tags: #development, #maintenance</div>
-
-    <div class="back-button">
-        <a href="index.html" style="text-decoration: none;">
-            <button>Back to Home</button>
-        </a>
+        <h2>F5 Accuracy and Precision</h2>
+        <h3>Definition:</h3>
+        <p>The chatbot should be able to provide accurate and precise information consistently.</p>
+        <h3>Techniques:</h3>
+        <ul>
+            <li>Regular Data Updates: regularly update the chatbot’s knowledge base with accurate and current information.</li>
+            <li>Data Integrity: check and ensure the integrity of the data the chatbot relies on.</li>
+            <li>Continuous Validation: regularly test and validate the chatbot’s responses to ensure they meet accuracy standards.</li>
+            <li>Algorithm Optimisation: regularly optimise the chatbot’s algorithms to improve response accuracy.</li>
+        </ul>
+        <h3>Examples:</h3>
+        <ul>
+            <li>Data integrity can be protected by methods such as data validation, consistency checks, and secure data storage. Data validation ensures the data used by the chatbot is accurate and reliable through validation processes. Consistency checks regularly check for data consistency across different parts of the system. Secure data storage uses secure methods for data storage and transmission to protect data integrity.</li>
+        </ul>
+        <div class="tags">Tags: #development, #maintenance</div>
+        
+        <div class="back-button">
+            <a href="index.html" style="text-decoration: none;">
+                <button>Back to Home</button>
+            </a>
+        </div>
     </div>
 
 </body>

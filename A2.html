@@ -10,6 +10,13 @@
             margin: 20px;
             padding: 0;
         }
+        .container {
+            width: 70%;
+            margin: 0 auto;
+        }
+        .invisible-container {
+            padding: 0 75px;
+        }
         h1 {
             text-align: center;
             font-size: 2em;
@@ -37,31 +44,33 @@
 <body>
 
     <h1>Section A: Privacy and Data Protection</h1>
-    <p>
-        AI chatbots that deal regularly with educational content should handle them and interact with users with the highest standards of privacy and data security. This section lists the specific goals that need to be achieved in order to ensure that the privacy and data protection is upheld to a reasonable standard. These goals include data anonymisation, data minimisation, informed consent, secure data storage and transmission, user control, compliance with laws, as well as privacy audits.
-    </p>
+    <div class="invisible-container">
+        <p>
+            AI chatbots that deal regularly with educational content should handle them and interact with users with the highest standards of privacy and data security. This section lists the specific goals that need to be achieved in order to ensure that the privacy and data protection is upheld to a reasonable standard. These goals include data anonymisation, data minimisation, informed consent, secure data storage and transmission, user control, compliance with laws, as well as privacy audits.
+        </p>
 
-    <h2>A2 Data Minimisation</h2>
-    <h3>Definition:</h3>
-    <p>Data collected and retained should be minimised to relevant and essential data.</p>
-    <h3>Techniques:</h3>
-    <ul>
-        <li>Data Collection Policies: avoid excessive data collection by only gathering user input, necessary contextual data, and avoid collecting data that is not directly relevant to fulfil the purpose of the chatbot.</li>
-        <li>Data Retention Policies: set clear data retention policies that define how long data will be stored before automatic deletion.</li>
-        <li>Data Purging: implement processes to regularly delete old, unused data.</li>
-    </ul>
-    <h3>Examples:</h3>
-    <p>
-        Automatic data purging processes may be used to regularly delete data that has not been used for a set period of time.
-    </p>
-    <div class="tags">Tags: #training, #interaction</div>
+        <h2>A2 Data Minimisation</h2>
+        <h3>Definition:</h3>
+        <p>Data collected and retained should be minimised to relevant and essential data.</p>
+        <h3>Techniques:</h3>
+        <ul>
+            <li>Data Collection Policies: avoid excessive data collection by only gathering user input, necessary contextual data, and avoid collecting data that is not directly relevant to fulfil the purpose of the chatbot.</li>
+            <li>Data Retention Policies: set clear data retention policies that define how long data will be stored before automatic deletion.</li>
+            <li>Data Purging: implement processes to regularly delete old, unused data.</li>
+        </ul>
+        <h3>Examples:</h3>
+        <ul>
+            <li>Automatic data purging processes may be used to regularly delete data that has not been used for a set period of time.</li>
+        </ul>
+        <div class="tags">Tags: #training, #interaction</div>
 
-    <div style="text-align: center; margin-top: 20px;">
-        <a href="index.html" style="text-decoration: none;">
-            <button style="padding: 10px 20px; background-color: #333; color: white; border: none; border-radius: 5px; cursor: pointer;">
-                Back to Home
-            </button>
-        </a>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="index.html" style="text-decoration: none;">
+                <button style="padding: 10px 20px; background-color: #333; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                    Back to Home
+                </button>
+            </a>
+        </div>
     </div>
 
 </body>

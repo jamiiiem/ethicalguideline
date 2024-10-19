@@ -10,6 +10,13 @@
             margin: 20px;
             padding: 0;
         }
+        .container {
+            width: 70%;
+            margin: 0 auto;
+        }
+        .invisible-container {
+            padding: 0 75px;
+        }
         h1 {
             text-align: center;
             font-size: 2em;
@@ -49,27 +56,31 @@
 <body>
 
     <h1>Section B: Technical Robustness and Safety</h1>
-    <p>
-        AI chatbots should operate reliably, securely, and ethically, even under unexpected or challenging conditions. This section focuses on building resilient systems that can withstand technical failures, adversarial attacks, and other potential risks while maintaining consistent performance. It emphasises security, safety, adversarial robustness, and fail-safe implementations as the four main goals that need to be achieved in order to ensure that the technical robustness and safety is upheld to a reasonable standard.
-    </p>
-    
-    <h1>B4 Fail-Safe Implementation</h1>
-    <h3>Definition:</h3>
-    <p>Systems should include fail-safe mechanisms to ensure minimal damage in case of a critical failure.</p>
-    <h3>Techniques:</h3>
-    <ul>
-        <li>Redundancy: systems should include redundant components and backups to avoid a single point of failure.</li>
-        <li>Graceful Degradation: the chatbot should gradually reduce its functionality in the event of a failure rather than completely shutting down.</li>
-        <li>Error Handling: implement robust error handling mechanisms that prevent unforeseen circumstances from causing major disruptions.</li>
-    </ul>
-    <h3>Examples:</h3>
-    <p>Fail-safe designs should be applied to both hardware and software components, ensuring that when unexpected failures occur, the system does not collapse.</p>
-    <div class="tags">Tags: #development</div>
+    <div class="invisible-container">
+        <p>
+            AI chatbots should operate reliably, securely, and ethically, even under unexpected or challenging conditions. This section focuses on building resilient systems that can withstand technical failures, adversarial attacks, and other potential risks while maintaining consistent performance. It emphasises security, safety, adversarial robustness, and fail-safe implementations as the four main goals that need to be achieved in order to ensure that the technical robustness and safety is upheld to a reasonable standard.
+        </p>
+        
+        <h1>B4 Fail-Safe Implementation</h1>
+        <h3>Definition:</h3>
+        <p>Systems should include fail-safe mechanisms to ensure minimal damage in case of a critical failure.</p>
+        <h3>Techniques:</h3>
+        <ul>
+            <li>Redundancy: systems should include redundant components and backups to avoid a single point of failure.</li>
+            <li>Graceful Degradation: the chatbot should gradually reduce its functionality in the event of a failure rather than completely shutting down.</li>
+            <li>Error Handling: implement robust error handling mechanisms that prevent unforeseen circumstances from causing major disruptions.</li>
+        </ul>
+        <h3>Examples:</h3>
+        <ul>
+            <li>Fail-safe designs should be applied to both hardware and software components, ensuring that when unexpected failures occur, the system does not collapse.</li>
+        </ul>
+        <div class="tags">Tags: #development</div>
 
-    <div class="back-button">
-        <a href="index.html" style="text-decoration: none;">
-            <button>Back to Home</button>
-        </a>
+        <div class="back-button">
+            <a href="index.html" style="text-decoration: none;">
+                <button>Back to Home</button>
+            </a>
+        </div>
     </div>
 
 </body>

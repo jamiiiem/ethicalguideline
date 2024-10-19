@@ -3,16 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D2 Transparency in Decision-Making</title>
+    <title>Section D: Accountability</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
             padding: 0;
         }
+        .container {
+            width: 70%;
+            margin: 0 auto;
+        }
+        .invisible-container {
+            padding: 0 75px;
+        }
         h1 {
             text-align: center;
             font-size: 2em;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 30px;
         }
         h3 {
             font-size: 1.2em;
@@ -45,25 +56,27 @@
 <body>
 
     <h1>Section D: Accountability</h1>
-    <p>
-        Accountability in AI chatbot development refers to the obligation of developers, organizations, and the chatbot itself to take responsibility for its actions, outcomes, and impacts. This includes ensuring that the chatbot adheres to ethical standards, operates transparently, and addresses any harm or issues that arise from its use.
-    </p>
+    <div class="invisible-container">
+        <p>
+            Accountability in AI chatbot development refers to the obligation of the developers and the chatbot to accept their responsibilities and face consequences whenever necessary. This section lists the specific goals that need to be achieved to ensure the accountability principles are upheld to a reasonable standard. These goals include clear role assignments, self-monitoring, corrective actions, incident response, and regulatory compliance.
+        </p>
 
-    <h1>D2 Transparency in Decision-Making</h1>
-    <h3>Definition:</h3>
-    <p>The chatbot should have an ability to provide explanations for its decisions and actions to users.</p>
-    <h3>Techniques:</h3>
-    <ul>
-        <li>Explainable AI (XAI): integrate XAI methods that allow the chatbot to explain its reasoning in a way that users can understand.</li>
-        <li>User Queries: allow users to ask the chatbot why it made a particular decision, and provide clear, understandable responses.</li>
-        <li>Decision Trails: maintain and make available a log of decision-making processes that users can access if needed.</li>
-    </ul>
-    <div class="tags">Tags: #development, #interaction</div>
+        <h2>D2 Self-Monitoring</h2>
+            <h3>Definition:</h3>
+            <p>The chatbot should be able to monitor its own operations and detect errors or problematic behavior.</p>
+            <h3>Techniques:</h3>
+            <ul>
+                <li>Error Logging: implement systems that allow the chatbot to log and categorize errors in real-time.</li>
+                <li>Anomaly Detection: utilize algorithms to detect unusual patterns in the chatbot’s responses.</li>
+                <li>Self-Assessment: enable the chatbot to periodically assess its performance against set benchmarks.</li>
+            </ul>
+            <div class="tags">Tags: #development</div>
 
-    <div class="back-button">
-        <a href="index.html" style="text-decoration: none;">
-            <button>Back to Home</button>
-        </a>
+        <div class="back-button">
+            <a href="index.html" style="text-decoration: none;">
+                <button>Back to Home</button>
+            </a>
+        </div>
     </div>
 
 </body>

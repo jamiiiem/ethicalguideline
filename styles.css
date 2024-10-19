@@ -1,12 +1,13 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
+    font-weight: 300; 
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
 .container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -125,3 +126,9 @@ main {
     margin: 20px auto;
 }
 
+footer {
+    text-align: center;      
+    font-size: 16px;      
+    color: #666;       
+    padding: 20px 0;      
+}

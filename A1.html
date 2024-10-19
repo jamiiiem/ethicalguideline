@@ -10,6 +10,13 @@
             margin: 20px;
             padding: 0;
         }
+        .container {
+            width: 70%;
+            margin: 0 auto;
+        }
+        .invisible-container {
+            padding: 0 75px;
+        }
         h1 {
             text-align: center;
             font-size: 2em;
@@ -37,36 +44,38 @@
 <body>
 
     <h1>Section A: Privacy and Data Protection</h1>
-    <p>
-        AI chatbots that deal regularly with educational content should handle them and interact with users with the highest standards of privacy and data security. This section lists the specific goals that need to be achieved in order to ensure that the privacy and data protection is upheld to a reasonable standard. These goals include data anonymisation, data minimisation, informed consent, secure data storage and transmission, user control, compliance with laws, as well as privacy audits.
-    </p>
+    <div class="invisible-container">
+        <p>
+            AI chatbots that deal regularly with educational content should handle them and interact with users with the highest standards of privacy and data security. This section lists the specific goals that need to be achieved in order to ensure that the privacy and data protection is upheld to a reasonable standard. These goals include data anonymisation, data minimisation, informed consent, secure data storage and transmission, user control, compliance with laws, as well as privacy audits.
+        </p>
 
-    <h2>A1 Data Anonymisation</h2>
-    <h3>Definition:</h3>
-    <p>Data should be collected with efforts to encrypt or erase the user’s private, sensitive, and identifiable information.</p>
-    <h3>Techniques:</h3>
-    <ul>
-        <li>Data Masking: substitute identifiable data with randomised data using data shuffling or data manipulation ideas.</li>
-        <li>Tokenisation: convert sensitive data into equivalent tokens that can be used in the system without exposing the original data.</li>
-        <li>Noise Addition: introduce minor randomisation to the data to ensure that individual identities cannot be traced back.</li>
-        <li>Data Generalisation: the precision of sensitive information can be reduced, generalising it by categorising data into groups.</li>
-    </ul>
-    <h3>Considerations:</h3>
-    <p>
-        Developers should aim to strike a balance between privacy and utility of data. Data protection measures are necessary and important, but overusing protection mechanisms may also lead to a lack of relevance and precision.
-    </p>
-    <h3>Examples:</h3>
-    <p>
-        The actual names of users can be converted into randomised strings to avoid storing sensitive training data. Plus, instead of using their precise age, data generalisation can be performed to categorise them into age groups of, for example, 15 to 18 years old, or 18-21 years old.
-    </p>
-    <div class="tags">Tags: #training, #interaction</div>
+        <h2>A1 Data Anonymisation</h2>
+        <h3>Definition:</h3>
+        <p>Data should be collected with efforts to encrypt or erase the user’s private, sensitive, and identifiable information.</p>
+        <h3>Techniques:</h3>
+        <ul>
+            <li>Data Masking: substitute identifiable data with randomised data using data shuffling or data manipulation ideas.</li>
+            <li>Tokenisation: convert sensitive data into equivalent tokens that can be used in the system without exposing the original data.</li>
+            <li>Noise Addition: introduce minor randomisation to the data to ensure that individual identities cannot be traced back.</li>
+            <li>Data Generalisation: the precision of sensitive information can be reduced, generalising it by categorising data into groups.</li>
+        </ul>
+        <h3>Considerations:</h3>
+        <ul>
+            <li>Developers should aim to strike a balance between privacy and utility of data. Data protection measures are necessary and important, but overusing protection mechanisms may also lead to a lack of relevance and precision.</li>
+        </ul>
+        <h3>Examples:</h3>
+        <ul>
+            <li>The actual names of users can be converted into randomised strings to avoid storing sensitive training data. Plus, instead of using their precise age, data generalisation can be performed to categorise them into age groups of, for example, 15 to 18 years old, or 18-21 years old.</li>
+        </ul>
+        <div class="tags">Tags: #training, #interaction</div>
 
-    <div style="text-align: center; margin-top: 20px;">
-        <a href="index.html" style="text-decoration: none;">
-            <button style="padding: 10px 20px; background-color: #333; color: white; border: none; border-radius: 5px; cursor: pointer;">
-                Back to Home
-            </button>
-        </a>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="index.html" style="text-decoration: none;">
+                <button style="padding: 10px 20px; background-color: #333; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                    Back to Home
+                </button>
+            </a>
+        </div>
     </div>
 
 </body>

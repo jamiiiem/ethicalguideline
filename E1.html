@@ -3,16 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E1 Clear Communication of Capabilities</title>
+    <title>Section E: Transparency</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
             padding: 0;
         }
+        .container {
+            width: 70%;
+            margin: 0 auto;
+        }
+        .invisible-container {
+            padding: 0 75px;
+        }
         h1 {
             text-align: center;
             font-size: 2em;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 30px;
         }
         h3 {
             font-size: 1.2em;
@@ -45,25 +56,36 @@
 <body>
 
     <h1>Section E: Transparency</h1>
-    <p>
-        Transparency in an AI chatbot involves being open and clear about how the chatbot operates, the data it uses, and the decisions it makes. It ensures that users understand the chatbot’s functions, limitations, and the processes behind its responses, fostering trust and accountability.
-    </p>
+    <div class="invisible-container">
+        <p>
+            Transparency in AI chatbots involve being open and clear about the chatbot’s operation, the data is uses, and the decisions it makes. This section lists the specific goals that need to be achieved to ensure the users understand the chatbot’s functions, processes, and limitations, to better foster trust in the chatbot. These goals include explainability, data usage transparency, algorithmic transparency, capability disclosure, and public documentation.
+        </p>
 
-    <h1>E1 Clear Communication of Capabilities</h1>
-    <h3>Definition:</h3>
-    <p>Developers should provide users with a clear understanding of what the chatbot can and cannot do.</p>
-    <h3>Techniques:</h3>
-    <ul>
-        <li>User Guides: Develop user-friendly guides that explain the chatbot’s features, capabilities, and intended use cases.</li>
-        <li>Capability Disclosures: Ensure the chatbot informs users about its limitations and areas of uncertainty during interactions.</li>
-        <li>FAQ Sections: Create and maintain a comprehensive FAQ section that addresses common questions about the chatbot’s abilities and limitations.</li>
-    </ul>
-    <div class="tags">Tags: #interaction</div>
-
-    <div class="back-button">
-        <a href="index.html" style="text-decoration: none;">
-            <button>Back to Home</button>
-        </a>
+        <h2>E1 Explainability</h2>
+        <h3>Definition:</h3>
+        <p>The chatbot should be able to explain the reasoning behind its decisions and actions to the users.</p>
+        <h3>Techniques:</h3>
+        <ul>
+            <li>Decision Explanations: provide human comprehensible explanations for its logic and decisions in natural languages.</li>
+            <li>Interactive Queries: allow users to ask for more detailed explanations or clarifications.</li>
+        </ul>
+        <h3>Examples:</h3>
+        <ul>
+            <li>Examples of explainability techniques include SHAP, Local Interpretable Model-agnostic Explanations (LIME), SHAP (Shapley Additive Explanations), Counterfactual Instances, Accumulated Local Effects (ALE), Explainable Boosting Machine (EBM), Partial Dependence Plot, Contrastive Explanation Method (CEM), Tree Surrogates, Global Interpretation via Recursive Partitioning (GIRP), etc.</li>
+        </ul>
+        <h3>Resources:</h3>
+        <ul>
+            <li><a href="https://www.darpa.mil/program/explainable-artificial-intelligence" target="_blank">Explainable AI (XAI)</a></li>
+            <li><a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/explaining-decisions-made-with-artificial-intelligence/" target="_blank">Explaining AI Decisions</a></li>
+            <li><a href="https://christophm.github.io/interpretable-ml-book/" target="_blank">Interpretable Machine Learning</a></li>
+        </ul>
+        <div class="tags">Tags: #development, #interaction</div>
+        
+        <div class="back-button">
+            <a href="index.html" style="text-decoration: none;">
+                <button>Back to Home</button>
+            </a>
+        </div>
     </div>
 
 </body>
