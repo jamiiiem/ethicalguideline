@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Read Me</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles.css"> 
     <style>
-        /* General body styling */
         body {
             font-family: arial, sans-serif;
             background-color: #f4f4f4;
@@ -24,12 +23,12 @@
 
         h1 {
             margin: 0;
-            font-size: 1.8em; /* Reduced font size */
+            font-size: 1.8em;
             letter-spacing: 1px;
         }
 
         main {
-            max-width: 900px; /* Reduced overall container size */
+            max-width: 900px;
             margin: 20px auto;
             padding: 15px;
             background-color: #fff;
@@ -37,21 +36,23 @@
         }
 
         p {
-            font-size: 1.05em; /* Slightly reduced font size */
+            font-size: 0.9em;
             margin-bottom: 15px;
         }
 
         ul {
+            font-size: 0.9em;
             list-style-type: none;
             padding: 0;
         }
 
         ul li {
+            font-size: 0.9em;
             margin-bottom: 10px;
         }
 
         ul li a {
-            color: #333; /* Changed hyperlink color to match text */
+            color: #333;
             text-decoration: none;
             font-weight: bold;
         }
@@ -60,7 +61,6 @@
             text-decoration: underline;
         }
 
-        /* Compact Table styling */
         table {
             width: 90%;
             border-collapse: collapse;
@@ -69,10 +69,10 @@
         }
 
         th, td {
-            padding: 8px 10px; /* Reduced padding */
+            padding: 8px 10px;
             text-align: left;
             border-bottom: 1px solid #ddd;
-            font-size: 0.9em; /* Reduced font size */
+            font-size: 0.9em;
         }
 
         th {
@@ -157,10 +157,26 @@
 
     <main>
         <section>
-            <p>The Guideline is separated into seven major sections. You may choose to filter and find specific information using the “Select Section” or “Select Tag” features on the home page, or both.</p>
-            <p>The tables below outline parts in reference guidelines that correspond to each section in this Guideline. You may refer to the tables to read more about the policies and practices for responsible and ethical AI development. </p>
-            <p>The shorthand form SCS refers to the <a href="https://www.scs.org.sg/bok/ai-ethics-v1-1" target="_blank">Singapore Computer Society Artificial Intelligence Ethics & Governance Body of Knowledge</a>, Microsoft refers to the <a href="https://blogs.microsoft.com/wp-content/uploads/prod/sites/5/2022/06/Microsoft-Responsible-AI-Standard-v2-General-Requirements-3.pdf" target="_blank">Microsoft Responsible AI Standard</a>, AIGov refers to the <a href="https://www.pdpc.gov.sg/-/media/files/pdpc/pdf-files/resource-for-organisation/ai/sgmodelaigovframework2.pdf" target="_blank">Model Artificial Intelligence Governance Framework</a> by Personal Data Protection Commission Singapore and AI Verify Foundation, GenAI refers to the <a href="https://aiverifyfoundation.sg/wp-content/uploads/2024/05/Model-AI-Governance-Framework-for-Generative-AI-May-2024-1-1.pdf" target="_blank">Model AI Governance Framework for Generative AI</a> by AI Verify Foundation and Infocomm Media Development Authority.</p>
-        </section>
+            <h2>Overview</h2>
+            <p>The Guideline is separated into seven major sections. You may choose to filter and find specific information using the <strong>Select Section</strong> or <strong>Select Tag</strong> features on the home page, or both.</p>
+            <p>The tables below outline chapters in the four reference guidelines that correspond to each goal and section. You may refer to the tables to read more about the policies and practices for responsible and ethical AI development.</p>
+        
+            <ul style="list-style-type: disc; padding-left: 20px;">
+                <li><a href="https://www.scs.org.sg/bok/ai-ethics-v1-1" target="_blank">Singapore Computer Society Artificial Intelligence Ethics & Governance Body of Knowledge</a> by Singapore Computer Society</li>
+                <li><a href="https://blogs.microsoft.com/wp-content/uploads/prod/sites/5/2022/06/Microsoft-Responsible-AI-Standard-v2-General-Requirements-3.pdf" target="_blank">Microsoft Responsible AI Standards</a> by Microsoft</li>
+                <li><a href="https://www.pdpc.gov.sg/-/media/files/pdpc/pdf-files/resource-for-organisation/ai/sgmodelaigovframework2.pdf" target="_blank">Model Artificial Intelligence Governance Framework</a> by Personal Data Protection Commission Singapore and AI Verify Foundation</li>
+                <li><a href="https://aiverifyfoundation.sg/wp-content/uploads/2024/05/Model-AI-Governance-Framework-for-Generative-AI-May-2024-1-1.pdf" target="_blank">Model AI Governance Framework for Generative AI</a> by AI Verify Foundation and Infocomm Media Development Authority</li>
+            </ul>
+        
+            <h2>Legend for the Tables</h2>
+            <p>The first part identifies the document or framework, and the second part specifies the chapter, clause, or goal. Examples:</p>
+            <ul style="list-style-type: disc; padding-left: 20px;">
+                <li><strong>SCS 1.0 Chapter 5.2</strong><br>Refers to v1.0 Chapter 5.2 in the Singapore Computer Society AI Ethics and Governance Body of Knowledge.</li>
+                <li><strong>GenAI Chapter 2</strong><br>Refers to Chapter 2: Data from the Model AI Governance Framework for Generative AI.</li>
+                <li><strong>Microsoft Goal RS1</strong><br>Refers to Goal RS1: Reliability and Safety Guidance in the Microsoft Responsible AI Standard.</li>
+                <li><strong>AIGov 3.54</strong><br>Refers to Clause 3.54 in the Model Artificial Intelligence Governance Framework.</li>
+            </ul>
+        </section>      
 
         <section>
             <h2>Section A: Privacy and Data Protection</h2>
@@ -190,7 +206,7 @@
                     </tr>
                     <tr>
                         <td>A5 User Control</td>
-                        <td>AIGov Facebook Case Study</td>
+                        <td>-</td>
                     </tr>
                     <tr>
                         <td>A6 Compliance with Laws</td>
@@ -285,26 +301,26 @@
                 <tbody>
                     <tr>
                         <td>D1 Clear Role Assignments</td>
-                        <td>SCS 1.0 Chapter 5.3<br>AIGov 3.26-3.29</td>
+                        <td>SCS 1.0 Chapter 3.2<br>AIGov 3.7</td>
                     </tr>
                     <tr>
                         <td>D2 Self-Monitoring</td>
-                        <td>AIGov 3.36</td>
+                        <td>Microsoft Goal RS3</td>
                     </tr>
                     <tr>
                         <td>D3 Corrective Actions</td>
-                        <td>SCS 1.0 Chapter 5.3</td>
-                    </tr>
-                    <tr>
-                        <td>D4 Incident Response</td>
-                        <td>GenAI Chapter 3<br>Microsoft Goal T3</td>
-                    </tr>
-                    <tr>
-                        <td>D5 Regulatory Compliance</td>
                         <td>GenAI Chapter 3</td>
                     </tr>
                     <tr>
-                        <td colspan="2"><b>Other Applicable Guidelines:</b><br>N/A</td>
+                        <td>D4 Incident Response</td>
+                        <td>GenAI Chapter 4<br>AIGov 3.54<br>SCS 1.1 Chapter 3.2</td>
+                    </tr>
+                    <tr>
+                        <td>D5 Regulatory Compliance</td>
+                        <td>GenAI Chapter 5<br>SCS 1.0 Chapter 5.3</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><b>Other Applicable Guidelines:</b><br>Microsoft Impact Assessment Guide</td>
                     </tr>
                 </tbody>
             </table>
